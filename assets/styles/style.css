@@ -1,0 +1,120 @@
+:root {
+	--background-color-dark: #0a192f;
+	--text-color: #8892b0;
+	--text-light-color: rgb(204, 214, 246);
+	--text-green-color: #64ffda;
+	--text-extra-light-color: #ccd6f6;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	background-color: var(--background-color-dark);
+	color: var(--text-color);
+	font-family: 'Smooch Sans', sans-serif;
+}
+.green {
+	color: var(--text-green-color);
+}
+
+/* NAV */
+#nav {
+	height: 15%;
+	display: flex;
+	align-items: center;
+	padding-top: 2.5%;
+	color: var(--text-light-color);
+}
+#nav-home-container {
+	flex: 3;
+	position: relative;
+	height: 100%;
+}
+#nav-home-container a {
+	position: absolute;
+	left: 5%;
+	text-decoration: none;
+	color: inherit;
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 48px;
+}
+#nav-items {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 5%;
+}
+#nav-items a {
+	text-decoration: none;
+	color: inherit;
+}
+#nav-home-container a:hover,
+#nav-items a:hover {
+	color: var(--text-green-color);
+}
+
+/* MAIN */
+main {
+	margin: 0 auto;
+	width: 80%;
+}
+
+/* BIO */
+#intro-section {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+#intro-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+#intro-header hr {
+	color: var(--text-color);
+	width: 100%;
+}
+#intro-header h2 {
+	font-size: clamp(40px, 8vw, 80px);
+	margin: 0;
+}
+#intro-start {
+	color: var(--text-green-color);
+	font-size: 24px;
+	font-weight: 400;
+}
+#intro-name {
+	color: var(--text-extra-light-color);
+}
+.intro-pars {
+	width: 33%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 18px;
+	padding: 1% auto;
+}
+#intro-img-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#intro-img {
+	width: 288px;
+	height: 288px;
+	box-shadow: 2px 2px 2px var(--text-color);
+	border-radius: 5px;
+}
+#footer {
+	position: fixed;
+	bottom: 2.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
