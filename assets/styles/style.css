@@ -8,6 +8,7 @@
 
 * {
 	box-sizing: border-box;
+	z-index: 1;
 }
 
 html,
@@ -17,6 +18,12 @@ body {
 	background-color: var(--background-color-dark);
 	color: var(--text-color);
 	font-family: 'Smooch Sans', sans-serif;
+}
+
+canvas {
+	cursor: not-allowed;
+	pointer-events: none;
+	z-index: 0;
 }
 
 .background {
