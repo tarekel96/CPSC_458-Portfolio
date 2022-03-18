@@ -14,9 +14,9 @@ window.onload = () => {
 	const resumeLink = document.querySelector('#resume-link');
 
 	// Default State
+	introSection.style.display = 'block';
 	bioSection.style.display = 'none';
 	resumeSection.style.display = 'none';
-	introSection.style.display = 'none';
 	// Helper
 	const handleSwitch = (section, otherSections) => {
 		otherSections.forEach((item) => (item.style.display = 'none'));

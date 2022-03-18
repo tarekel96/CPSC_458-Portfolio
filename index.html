@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Your Page Title</title>
+        <title>Tarek El-Hajjaoui</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Your name">
@@ -19,7 +19,7 @@
                 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital@1&family=Smooch+Sans&display=swap');
         </style>
         <link href="assets/styles/style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
@@ -27,7 +27,18 @@
         <canvas class="background"></canvas>
         <nav id="nav">
                 <div id="nav-home-container">
-                        <a id="home-link" class="green" href="">Tarek</a>
+                        <!-- <img src="assets/images/terminal.png" alt="code symbol" /> -->
+
+                        <a id="home-link" class="green" href="">
+                                <div> <svg id="code-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.3252 3.05011L8.66765 20.4323L10.5995 20.9499L15.257 3.56775L13.3252 3.05011Z"
+                                                        fill="black" />
+                                                <path d="M7.61222 18.3608L8.97161 16.9124L8.9711 16.8933L3.87681 12.1121L8.66724 7.00798L7.20892 5.63928L1.0498 12.2017L7.61222 18.3608Z"
+                                                        fill="black" />
+                                                <path d="M16.3883 18.3608L15.0289 16.9124L15.0294 16.8933L20.1237 12.1121L15.3333 7.00798L16.7916 5.63928L22.9507 12.2017L16.3883 18.3608Z"
+                                                        fill="black" />
+                                        </svg></div>Tarek
+                        </a>
                 </div>
                 <div id="nav-items">
                         <a id="bio-link" name="bio">Bio</a>
@@ -36,7 +47,7 @@
                 </div>
         </nav>
         <main>
-                <!-- Intro Section -->
+                <!-- INTRO SECTION -->
                 <section id="intro-section">
                         <header id="intro-header">
                                 <p id="intro-start">Hi, my name is</p>
@@ -44,7 +55,8 @@
                                 <h2>What I Strive To Do</h2>
                                 <br>
                                 <!-- <hr> -->
-                                <p class="intro-pars">My mission as a <span class="green">software engineer</span> is to
+                                <p class="intro-pars grey-bg">My mission as a <span class="green">software
+                                                engineer</span> is to
                                         build
                                         robust,
                                         efficient, and
@@ -52,13 +64,17 @@
                                         applications that empower and improve lives.
                                 </p>
                                 <br>
-                                <p class="intro-pars">I believe that with software engineering we can make the world a
+                                <p class="intro-pars grey-bg">I believe that with software engineering we can make the
+                                        world a
                                         better place by
                                         developing technologies that <span class="green">empower people and
                                                 businesses</span>.</p>
                         </header>
-                        <!-- <hr> -->
                 </section>
+
+
+                <!-- BIO SECTION -->
+
                 <section id="bio-section">
                         <figure id="intro-img-container">
                                 <img id="intro-img" src="/assets/images/tarekProfilePic.jpg" alt="profile">
@@ -67,19 +83,25 @@
                                 </figcaption>
                         </figure>
                         <hr>
-                        <div>
-                                <p>I am a 2nd Bachelor's student attending Chapman University to learn more about my
+                        <div id="bio-pars-container">
+                                <p class="grey-bg">I am a 2nd Bachelor's student attending <span class="green">Chapman
+                                                University</span> to learn
+                                        more about my
                                         passion,
-                                        Software Engineering. Before attending Chapman, I graduated from the University
-                                        of San
-                                        Diego where I got a Bachelor’s in Business Administration (as a pre-med
+                                        Software Engineering. Before attending Chapman, I graduated from the <span
+                                                class="green">University
+                                                of San
+                                                Diego</span> where I got a <span class="green">Bachelor’s in Business
+                                                Administration</span> (as a pre-med
                                         student). By
                                         graduation, I knew medicine did not excite me enough to want to pursue a career
                                         in the
                                         field. I always had an interest in technology and software, so I attended the
-                                        UCI Coding
-                                        Bootcamp very soon after graduating from USD.</p>
-                                <p>The Bootcamp solidified my realization that computer programming is my passion and
+                                        <span class="green">UCI Coding
+                                                Bootcamp</span> very soon after graduating from USD.
+                                </p>
+                                <p class="grey-bg">The Bootcamp solidified my realization that computer programming is
+                                        my passion and
                                         the career
                                         path I want to continue to pursue. I deiced to go back to a 4-year university,
                                         Chapman
@@ -87,9 +109,13 @@
                                         to
                                         learn more about my newly discovered passion. In addition to attending Chapman,
                                         I have
-                                        interned as a software engineer with multiple companies such as Forkaia, Pacific
+                                        interned as a software engineer with multiple companies such as Pacific
                                         Life
-                                        Insurnace, and now currently HumanID. Please feel welcome to message me on
+                                        Insurnace and humanID. This summer I will intern at <span class="green">Pacific
+                                                Life</span> as a data
+                                        engineer and will enroll in the <span class="green">M.S. in Data Science at UCI
+                                                (University of
+                                                California Irvine)</span>. Please feel welcome to message me on
                                         LinkedIn or
                                         send me an email if you have any questions.</p>
                         </div>
@@ -97,9 +123,30 @@
 
                 <section id="resume-section">
                         <h1>Resume</h1>
-                        <hr>
-                        <div>
-                                resume
+                        <div class='resumeSections'>
+                                <div class='skillsAndEducation'>
+                                        <section class='technicalSkills'>
+                                                <header>Technical Skills</header>
+                                                <hr />
+                                                <div>
+                                                        <!--  -->
+                                                </div>
+                                                <article>"*" indicates certification for skill</article>
+                                                <hr />
+                                        </section>
+                                        <section class='education'>
+                                                <header>Education</header>
+                                                <hr />
+                                                <!-- Skills -->
+                                                <hr />
+                                        </section>
+                                </div>
+                                <section class='experiences'>
+                                        <header>Experiences</header>
+                                        <hr />
+                                        <!-- Experiences -->
+                                        <hr />
+                                </section>
                         </div>
                 </section>
         </main>
@@ -109,8 +156,8 @@
                         design</a>
         </footer>
 
-        <script src="/assets/js/particles.min.js"></script>
-        <script src="/assets/js/script.js"></script>
+        <script src="assets/js/particles.min.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
