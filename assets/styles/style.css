@@ -230,3 +230,40 @@ main {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+/* MEDIA QUERIES */
+/* TABLET and MOBILE */
+@media (max-width: 768px) {
+	#home-link {
+		font-size: 32px !important;
+	}
+	#nav-items {
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+	}
+	#intro-header p {
+		font-size: 16px;
+	}
+	#intro-name,
+	#intro-header h2 {
+		font-size: 24px;
+	}
+	.intro-pars {
+		width: 50% !important;
+	}
+	#footer {
+		bottom: 0;
+	}
+	.arrowIcons {
+		width: 24px;
+		height: 24px;
+	}
+	ol {
+		margin-block-start: 0 !important;
+		padding-inline-start: 0 !important;
+	}
+	#footer {
+		display: none;
+	}
+}
