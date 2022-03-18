@@ -42,7 +42,7 @@
                 </div>
                 <div id="nav-items">
                         <a id="bio-link" name="bio">Bio</a>
-                        <a id="resume-link">Resume</a>
+                        <a id="projects-link">Projects</a>
                         <a>Resume (pdf)</a>
                 </div>
         </nav>
@@ -121,32 +121,94 @@
                         </div>
                 </section>
 
-                <section id="resume-section">
-                        <h1>Resume</h1>
-                        <div class='resumeSections'>
-                                <div class='skillsAndEducation'>
-                                        <section class='technicalSkills'>
-                                                <header>Technical Skills</header>
-                                                <hr />
-                                                <div>
-                                                        <!--  -->
-                                                </div>
-                                                <article>"*" indicates certification for skill</article>
-                                                <hr />
-                                        </section>
-                                        <section class='education'>
-                                                <header>Education</header>
-                                                <hr />
-                                                <!-- Skills -->
-                                                <hr />
-                                        </section>
+                <section id="projects-section">
+                        <h1>Projects</h1>
+                        <div id="card-container">
+                                <div>
+                                        <svg id="leftArrow" class="arrowIcons" xmlns="http://www.w3.org/2000/svg"
+                                                width="48" height="48" viewBox="0 0 24 24">
+                                                <path
+                                                        d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z" />
+                                        </svg>
                                 </div>
-                                <section class='experiences'>
-                                        <header>Experiences</header>
-                                        <hr />
-                                        <!-- Experiences -->
-                                        <hr />
-                                </section>
+                                <article id="flask-mysql-project" class="project-card">
+                                        <h2 class="green">Flask/React/MySQL Magazine App</h2>
+                                        <p>Developed a Flask / React app that connects to a MySQL DB (hosted on GCP) and
+                                                then
+                                                populates the database with records from a csv file (data was
+                                                synthetically generated via Python). The app has 2 types of users:
+                                                clients and admin, which can interact with the database in different
+                                                ways. The design of the DB and ER
+                                                Model was done from scratch and included in the repository.
+                                        </p>
+                                        <div>
+                                                <ol>
+                                                        <li>
+                                                                <span class="green">Technologies used:
+                                                                </span>Technologies used:
+                                                                Python, Flask, React.js, MySQL, SQLAlchemy, GCP
+                                                        </li>
+                                                        <li>
+                                                                <a
+                                                                        href="https://github.com/tarekel96/Flask_MySQL_MagazineApp"><span
+                                                                                class="green">GitHub.</a></span>
+                                                        </li>
+                                                </ol>
+                                        </div>
+                                </article>
+                                <article id="game-of-life-project" class="project-card">
+                                        <h2 class="green">Game of Life</h2>
+                                        <p>Built Game Of Life in C++ with 3 game modes: Classical, Doughnut, and Mirror.
+                                                The program takes in an input file to get the number of rows and columns
+                                                of the matrix. The program prompts the user for further options.</p>
+                                        <div>
+                                                <ol>
+                                                        <li>
+                                                                <span class="green">Technologies used:
+                                                                </span>Technologies used:
+                                                                C++, 2D Array, Dynamic Memory Allocation, Console
+                                                                Sleep/Pause, Input Validation
+                                                        </li>
+                                                        <li>
+                                                                <a href="https://github.com/tarekel96/cpsc350-hw2"><span
+                                                                                class="green">GitHub.</span></a>
+                                                        </li>
+                                                </ol>
+                                        </div>
+                                </article>
+                                <article id="ML-project" class="project-card">
+                                        <h2 class="green">RSNA-MICCAI Brain Tumor Radiogenomic Classification</h2>
+                                        <p>Built ANNs (CNN, ResNet50) that can detect and classify presence of MGMT
+                                                (genetic
+                                                biomarker important for chemotherapy treatment), utilizing
+                                                multi-parametric
+                                                magnetic resonance imaging (mpMRI) scans from a Kaggle competition
+                                                dataset.
+                                                Augmented the dataset of MRI scans with a Conditional GAN Model</p>
+                                        <div>
+                                                <ol>
+                                                        <li>
+                                                                <span class="green">Technologies used:
+                                                                </span>Technologies used:
+                                                                Python,
+                                                                TensorFlow, Keras (Sequential Model), Transfer Learning
+                                                                (ResNet50), CNN, cGAN, CV2, Scikit-Learn, Pandas, NumPy
+                                                        </li>
+                                                        <li>
+                                                                <span class="green">GitHub: </span>Upcoming – work is
+                                                                currently
+                                                                on Google Colab.
+                                                        </li>
+                                                </ol>
+                                        </div>
+                                </article>
+                                <div>
+                                        <svg id="rightArrow" class="arrowIcons" xmlns="http://www.w3.org/2000/svg"
+                                                width="48" height="48" viewBox="0 0 24 24">
+                                                <path
+                                                        d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z" />
+                                        </svg>
+                                </div>
                         </div>
                 </section>
         </main>
