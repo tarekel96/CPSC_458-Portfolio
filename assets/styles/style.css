@@ -21,6 +21,10 @@ body {
 	font-family: 'Smooch Sans', sans-serif;
 }
 
+.none {
+	display: none !important;
+}
+
 canvas {
 	cursor: not-allowed;
 	pointer-events: none;
